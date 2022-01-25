@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgba(127, 213, 253, 0.5);
+    height: calc(100vh - 260px);
+    /* 100vh - marge de la div suivante + taille du footer */
+}

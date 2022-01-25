@@ -1,0 +1,64 @@
+.connexion {
+    margin: 100px 50px 80px 50px;
+    min-height: 100%;
+}
+
+.connexion .container {
+    position: relative;
+    height: 300px;
+    margin: 100px 45px 0px 45px;
+    padding: 50px 30px;
+    border: 2px solid #0084ff;
+}
+
+.connexion p {
+    color: #011aac;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.connexion p label {
+    display: inline-block;
+    border-bottom: 3px solid gold;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.text-area {
+    margin-left: 20px;
+    padding: 5px 5px;
+    position: relative;
+    bottom: 3px;
+}
+
+.text-area:focus {
+    box-shadow: 0 0 5px 2px rgb(30, 154, 4), 0 0 16px 8px rgb(30, 154, 4);
+    outline: 0;
+}
+
+.btn-box {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.btn-style {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+@media all and (max-width:700px) {
+    .connexion p {
+        font-size: 1em;
+    }
+    .text-area {
+        margin-left: 5px;
+        width: 100%;
+        position: relative;
+    }
+    .connexion .container {
+        margin: 0 0;
+    }
+}
