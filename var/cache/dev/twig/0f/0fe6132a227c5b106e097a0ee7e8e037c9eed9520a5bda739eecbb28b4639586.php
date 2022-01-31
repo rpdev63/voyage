@@ -99,6 +99,6 @@ class __TwigTemplate_8d740b939f491b214f8fa1f97096f4d6e3313ed1397b402716bdfe5a54a
 .container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
+", "@email/zurb_2/notification/local.css", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
     }
 }

@@ -10,3 +10,14 @@ body {
     height: calc(100vh - 260px);
     /* 100vh - marge de la div suivante + taille du footer */
 }
+
+.main-container {
+    margin: 100px 50px 80px 50px;
+    min-height: 100%;
+}
+
+@media all and (max-width:800px) {
+    .main-container {
+        margin: 100px 20px 80px 20px;
+    }
+}

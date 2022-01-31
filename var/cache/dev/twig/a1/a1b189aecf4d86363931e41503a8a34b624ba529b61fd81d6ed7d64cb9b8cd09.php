@@ -71,6 +71,6 @@ class __TwigTemplate_a38e0ba8d5aefc9fee0d5515da1f97d741d5c9167d54d05a815ca83d475
     public function getSourceContext()
     {
         return new Source("{% extends \"@email/zurb_2/notification/body.html.twig\" %}
-", "@email/default/notification/body.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.html.twig");
+", "@email/default/notification/body.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.html.twig");
     }
 }

@@ -125,6 +125,6 @@ class __TwigTemplate_79972147ba5b6017b4b74253e273a1ccd9c83b828bb6a91521163f5fd6f
 .exception-message-wrapper .container {
     min-height: unset;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

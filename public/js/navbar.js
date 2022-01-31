@@ -10,7 +10,8 @@ if (window.innerWidth > 991) {
 }
 
 window.addEventListener("resize", () => {
-    
+
+
     if (window.innerWidth > 991 && !active) {
 
         navbarElt.classList.add('active');

@@ -710,6 +710,6 @@ class __TwigTemplate_db36af39ece312e613e3683375e38e3db3491d03d8f08e467ce2043c82f
         <td class=\"font-normal\">{{ migration.execution_time|default('n/a') }}</td>
     </tr>
 {% endmacro %}
-", "@DoctrineMigrations/Collector/migrations.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/doctrine/doctrine-migrations-bundle/Resources/views/Collector/migrations.html.twig");
+", "@DoctrineMigrations/Collector/migrations.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/doctrine/doctrine-migrations-bundle/Resources/views/Collector/migrations.html.twig");
     }
 }

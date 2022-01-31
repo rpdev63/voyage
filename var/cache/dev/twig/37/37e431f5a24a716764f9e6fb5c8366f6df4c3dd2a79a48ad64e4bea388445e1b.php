@@ -691,6 +691,6 @@ class __TwigTemplate_9935f62b6424b8b84c8bd2d83e33a031ae9b64ab41fac052211244351ea
 {% block form_group_class -%}
     col-sm-10
 {%- endblock form_group_class %}
-", "bootstrap_5_horizontal_layout.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_5_horizontal_layout.html.twig");
+", "bootstrap_5_horizontal_layout.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_5_horizontal_layout.html.twig");
     }
 }

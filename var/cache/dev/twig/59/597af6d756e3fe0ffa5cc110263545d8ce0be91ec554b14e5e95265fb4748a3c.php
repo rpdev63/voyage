@@ -479,6 +479,6 @@ class __TwigTemplate_2b75bc8acf07101ed8b0a08d91958544a963a59e4eccbb718a5b53ce90a
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

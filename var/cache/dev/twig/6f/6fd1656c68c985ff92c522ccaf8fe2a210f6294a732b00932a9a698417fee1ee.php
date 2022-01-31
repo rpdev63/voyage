@@ -81,6 +81,6 @@ class __TwigTemplate_84edf752fc04c763aa8f2226687dd558dba66f4665754df6843294b1c2e
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

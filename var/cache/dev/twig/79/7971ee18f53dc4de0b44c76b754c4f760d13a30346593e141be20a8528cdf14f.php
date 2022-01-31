@@ -900,6 +900,6 @@ class __TwigTemplate_f68e5cf2d73fedac315661ed20fae4c5f2c51176d234f5315390fc284b1
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

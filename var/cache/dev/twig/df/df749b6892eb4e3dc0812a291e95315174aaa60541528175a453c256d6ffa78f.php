@@ -277,6 +277,6 @@ class __TwigTemplate_6094dda2222f877b731e61310182130c062fa007f804458c43ffef73ca7
     {% set attr = attr|merge({class: (attr.class|default('') ~ ' button')|trim}) %}
     {{- parent() -}}
 {%- endblock button_widget %}
-", "foundation_6_layout.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/foundation_6_layout.html.twig");
+", "foundation_6_layout.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/foundation_6_layout.html.twig");
     }
 }

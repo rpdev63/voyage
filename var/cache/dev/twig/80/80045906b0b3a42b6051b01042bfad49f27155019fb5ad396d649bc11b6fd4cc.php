@@ -434,6 +434,6 @@ class __TwigTemplate_6e2557ddda6a7bc9f1907727066e649674ec48a610e182ecdebc96ef90a
     {%- set widget_class = widget_class|default('mr-2') -%}
     {{- parent() -}}
 {%- endblock radio_widget -%}
-", "tailwind_2_layout.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/tailwind_2_layout.html.twig");
+", "tailwind_2_layout.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/twig-bridge/Resources/views/Form/tailwind_2_layout.html.twig");
     }
 }

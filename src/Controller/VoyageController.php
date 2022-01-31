@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Voyage;
 use App\Form\VoyageType;
 use App\Repository\VoyageRepository;
+use App\Service\FileUploader;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,13 +24,20 @@ class VoyageController extends AbstractController
     }
 
     #[Route('/new', name: 'voyage_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    public function new(Request $request, EntityManagerInterface $entityManager, FileUploader $fileUploader): Response
     {
         $voyage = new Voyage();
         $form = $this->createForm(VoyageType::class, $voyage);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            //Traitement image
+            $file = $form->get('img')->getData();
+
+            if ($file) {
+                $brochureFileName = $fileUploader->upload($file);
+                $voyage->setImg($brochureFileName);
+            }
             $entityManager->persist($voyage);
             $entityManager->flush();
 
@@ -51,12 +59,19 @@ class VoyageController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'voyage_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, Voyage $voyage, EntityManagerInterface $entityManager): Response
+    public function edit(Request $request, Voyage $voyage, EntityManagerInterface $entityManager, FileUploader $fileUploader): Response
     {
         $form = $this->createForm(VoyageType::class, $voyage);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            //Traitement image
+            $file = $form->get('img')->getData();
+
+            if ($file) {
+                $brochureFileName = $fileUploader->upload($file);
+                $voyage->setImg($brochureFileName);
+            }
             $entityManager->flush();
 
             return $this->redirectToRoute('voyage_index', [], Response::HTTP_SEE_OTHER);
@@ -71,7 +86,7 @@ class VoyageController extends AbstractController
     #[Route('/{id}', name: 'voyage_delete', methods: ['POST'])]
     public function delete(Request $request, Voyage $voyage, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$voyage->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $voyage->getId(), $request->request->get('_token'))) {
             $entityManager->remove($voyage);
             $entityManager->flush();
         }

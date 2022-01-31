@@ -18,7 +18,7 @@ class AnnotationsConfig
     private $debug;
     
     /**
-     * @default false
+     * @default true
      * @param ParamConfigurator|bool $value
      * @return $this
      */

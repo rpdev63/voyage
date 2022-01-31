@@ -5,10 +5,47 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link rel="stylesheet" href="{{ asset('css/connexion.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/footer.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/home.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/navbar.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/tables.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/voyages.css') }} ">
+        
         {% block stylesheets %}{% endblock %}       
     </head>
     <body>
+        {% block navbar %}
+        <header id="header">
+            <a href="index.php" class="logo">
+                <img src="img/sun.png" alt='' />
+            </a>
+            <div id="toggle"></div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="{{path('home')}}">Accueil</a></li>
+                    <li><a href="{{path('catalogue')}}">Voyages</a></li>
+                    <li><a href="#">Truc</a></li>
+                    <li><a href="#">Truc</a></li>
+                    <li><a href="{{path('app_login')}}">Connect</a></li>
+                </ul>
+            </div>
+            <script src="{{ asset('js/navbar.js') }} "></script>
+           
+        </header> 
+        {% endblock %}
+        <div class="main-container">
         {% block body %}{% endblock %}
+        </div>
+        {% block footer %} 
+        <div class="footer">
+            <br>
+            <p class="copyright">Copyright © Groupe 2 - POEC PHP / Symphony 2021</p>
+        </div>
+        {% endblock %}
+        <script src="{{ asset('js/utilities.js') }}"></script>
         {% block javascripts %}{% endblock %}
+        
     </body>
 </html>

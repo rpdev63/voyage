@@ -171,6 +171,6 @@ class __TwigTemplate_530b008178bd8443de9eb19edcebf762dc23e130a1fae959fce3908bb65
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

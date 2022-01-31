@@ -803,6 +803,6 @@ class __TwigTemplate_7e289d548aabb8638d2cea9af6f25b2ce0efc2b6349d3b5b7b49cea630c
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/home/zeugy/dev/symfony/Sportshop/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/home/zeugy/dev/symfony/Voyages/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

@@ -1,0 +1,9 @@
+<div class="liste-categories">    
+    <ul>
+        <li><a href="{{path('catalogue')}}"> Tous </a></li>
+        {% for category in categories %}
+            
+        <li><a href="{{path('catalogueByCategory', {catId: category.id})}}"> {{category.name}} </a></li> 
+        {% endfor %}
+    </ul>
+</div>

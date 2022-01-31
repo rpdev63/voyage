@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="voyages">
+    <h3 class="catalogue-title"> Faites votre choix !</h3>
+    {{ render(controller ('App\\Controller\\CategoryNavController::getCatMenu' ))}}
+    <div class="cards-container">
+        
+        {% if categorySelected is defined  %}
+            {% for voyage in voyages %}
+                {% for category in voyage.categories %}
+                    {% if category.id == categorySelected %}
+                        <div class="voyage">
+                                
+                            <h5> {{voyage.name}}</h5><br>
+                            <p> Catégorie </p><br>
+                            <div class="voyage-img-box">
+                                
+                                <img id="voyage-img" src="../img/{{voyage.getImg()}}" alt="Image indisponible" />
+                            </div>
+
+                            <div class="card-footer">
+                                <span id="prix"> {{voyage.price}}€ par personne </span>
+                                <span><a href="#">Fiche détaillée</a></span>
+                            </div><br>
+                
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+        {% else %}
+            {% for voyage in voyages %}
+                
+                <div class="voyage">
+
+                    <h5> {{voyage.name}}</h5><br>
+                    <p> Catégorie </p><br>
+                    <div class="voyage-img-box">
+
+                        <img id="voyage-img" src="img/{{voyage.img}}" alt="Image indisponible" />
+                    </div>
+
+                    <div class="card-footer">
+                        <span id="prix"> {{voyage.price}}€ par personne </span>
+                        <span><a href="#">Fiche détaillée</a></span>
+                    </div><br>
+                
+                </div>
+                  
+            {% endfor %}       
+        
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

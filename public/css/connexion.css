@@ -1,64 +1,71 @@
-.connexion {
+.connexion,
+.inscription {
     margin: 100px 50px 80px 50px;
     min-height: 100%;
 }
 
-.connexion .container {
+.connexion .container,
+.inscription .container {
     position: relative;
-    height: 300px;
+    height: 350px;
+    width: 600px;
     margin: 100px 45px 0px 45px;
     padding: 50px 30px;
     border: 2px solid #0084ff;
 }
 
-.connexion p {
-    color: #011aac;
-    font-size: 1.5rem;
-    font-weight: bold;
+.connexion h1,
+.inscription h1 {
+    margin-bottom: 20px;
 }
 
-.connexion p label {
-    display: inline-block;
-    border-bottom: 3px solid gold;
-    border-radius: 4px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.connexion form div,
+.inscription .container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.text-area {
-    margin-left: 20px;
-    padding: 5px 5px;
-    position: relative;
-    bottom: 3px;
+.inscription .container * {
+    margin: 5px 0;
 }
 
-.text-area:focus {
-    box-shadow: 0 0 5px 2px rgb(30, 154, 4), 0 0 16px 8px rgb(30, 154, 4);
+.connexion form div label,
+.inscription .container label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.connexion form div input,
+.inscription .container input {
+    padding: 3px 3px;
+    border-radius: 3px;
     outline: 0;
 }
 
-.btn-box {
-    position: relative;
-    left: 20px;
-    top: 20px;
+.connexion form div input:focus {
+    box-shadow: 0 0 5px 2px gold;
+    outline: 0;
+}
+
+.connexion form div:nth-child(3) {
+    display: inline-block;
+}
+
+#registration_form_agreeTerms {
+    margin-left: 15px;
 }
 
 .btn-style {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1em;
+    width: min-content;
+    border: 2px solid transparent;
 }
 
-@media all and (max-width:700px) {
-    .connexion p {
-        font-size: 1em;
-    }
-    .text-area {
-        margin-left: 5px;
-        width: 100%;
-        position: relative;
-    }
-    .connexion .container {
-        margin: 0 0;
-    }
+.btn-style:hover {
+    color: gold;
+    border: 2px solid gold;
 }

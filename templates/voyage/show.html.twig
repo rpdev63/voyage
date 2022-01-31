@@ -20,12 +20,24 @@
                 <td>{{ voyage.reference }}</td>
             </tr>
             <tr>
+                <th>Univers</th>
+                <td>{{ voyage.univers.name }}</td>
+            </tr>
+            <tr>
                 <th>Price</th>
                 <td>{{ voyage.price }}</td>
             </tr>
             <tr>
                 <th>Img</th>
                 <td>{{ voyage.img }}</td>
+            </tr>
+            <tr>
+                <th>Catégories</th>
+                <td>
+                {% for category in voyage.categories %}
+                {{ category.name }} <br>
+                {% endfor %}        
+                </td>
             </tr>
         </tbody>
     </table>

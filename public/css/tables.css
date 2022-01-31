@@ -1,0 +1,45 @@
+.table {
+    position: relative;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 5px solid rgb(0, 132, 255);
+    margin: 30px 50px;
+    overflow-wrap: break-word;
+}
+
+tr:nth-child(even) {
+    background: rgb(0, 132, 255, 0.5);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background: whitesmoke;
+    color: black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+th {
+    background: rgb(0, 132, 255);
+    color: white;
+}
+
+.table a,
+.table a:visited {
+    color: gold;
+    margin: 0 10px;
+    font-weight: 800;
+}
+
+@media all and (max-width:800px) {
+    .table {
+        word-break: break-all;
+        font-size: 0.8em;
+    }
+}
